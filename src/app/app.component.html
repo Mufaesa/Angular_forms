@@ -62,6 +62,19 @@
           >
           </textarea>
           <p>Your reply: {{ answer }}</p>
+
+          <!-- Radio buttons (standard answer = female) -->
+          <div class="radio" *ngFor="let gender of genders">
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                [ngModel]="'female'"
+                [value]="gender"
+              />
+              {{ gender }}
+            </label>
+          </div>
         </div>
 
         <!-- Pass the form reference created at the top to disable the submit button -->
