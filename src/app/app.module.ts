@@ -4,16 +4,24 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { AssignmentComponent } from './assignment/assignment.component';
+import { TdformComponent } from './tdform/tdform.component';
+import { HeaderComponent } from './header/header.component';
+import { ExampleComponent } from './example/example.component';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AssignmentComponent
+    TdformComponent,
+    HeaderComponent,
+    ExampleComponent,
+    ReactiveComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
