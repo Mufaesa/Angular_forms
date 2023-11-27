@@ -41,6 +41,7 @@
               id="status"
               formControlName="status"
               class="form-control">
+              <option *ngFor="let option of statusOptions" [value]="option">{{ option }}</option>
             </select>
           </div>
 
