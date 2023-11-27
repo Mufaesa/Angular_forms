@@ -14,6 +14,39 @@
   
             Upon submitting the form, simply print the value to the console
         -->
+
+        <form [formGroup]="ReactiveForm" (ngSubmit)="onSubmit()">
+
+          <div class="form-group">
+            <label for="projectName">Project name</label>
+            <input
+              type="text"
+              id="projectName"
+              formControlName="projectName"
+              class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              formControlName="email"
+              class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="Status">Project status:</label>
+            <select 
+              id="status"
+              formControlName="status"
+              class="form-control">
+            </select>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
       </div>
     </div>
   </div>
