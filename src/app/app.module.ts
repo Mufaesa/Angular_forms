@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { ExampleComponent } from './example/example.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveAssignmentComponent } from './reactive-assignment/reactive-assignment.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     ExampleComponent,
     ReactiveComponent,
+    ReactiveAssignmentComponent,
   ],
   imports: [
     BrowserModule,
