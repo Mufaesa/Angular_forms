@@ -18,7 +18,7 @@ export class ReactiveAssignmentComponent implements OnInit {
   ngOnInit(): void {
     this.ReactiveForm = new FormGroup({
       projectName: new FormControl(null, [Validators.required], this.forbiddenNameValidatorAsync),
-      email: new FormControl(null),
+      email: new FormControl(null, [Validators.required, Validators.email]),
       status: new FormControl(null)
     });
   }
